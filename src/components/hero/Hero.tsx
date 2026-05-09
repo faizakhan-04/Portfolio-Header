@@ -90,7 +90,7 @@ export default function Hero() {
       <header className="relative z-30 mx-auto flex max-w-[1400px] items-center justify-between px-10 pt-8">
         <div className="flex items-baseline gap-3">
           <span className="font-display text-2xl font-medium tracking-tight">Faiza</span>
-          <span className="font-hand text-ink-faint text-lg">— field notes</span>
+          <span className="font-hand text-ink-faint text-lg">— research notes</span>
         </div>
         <nav className="hidden items-center gap-9 text-sm text-ink-soft md:flex">
           <a href="#work"    className="hover:text-ink transition-colors">Work</a>
@@ -98,7 +98,7 @@ export default function Hero() {
           <a href="#writing" className="hover:text-ink transition-colors">Writing</a>
           <a href="#contact" className="hover:text-ink transition-colors">Contact</a>
         </nav>
-        <div className="font-hand text-ink-faint text-base hidden md:block">vol. 04 · 2026</div>
+        <div className="font-hand text-ink-faint text-base hidden md:block">vol. 05 · 2026</div>
       </header>
 
       {/* Main grid */}
@@ -110,18 +110,18 @@ export default function Hero() {
             <span className="h-px w-8 bg-ink-faint" />Index 01
           </div>
           <div className="font-hand-alt text-[13px] leading-relaxed text-ink-soft space-y-2">
-            <p>· observation</p>
-            <p>· interview</p>
+            <p>· listening</p>
+            <p>· shadowing</p>
             <p className="ink-underline inline-block">· synthesis</p>
-            <p>· service map</p>
-            <p>· prototype</p>
+            <p>· journey map</p>
+            <p>· co-design</p>
             <p>· care</p>
           </div>
           <div className="pt-6">
             <div className="text-[11px] uppercase tracking-[0.22em] text-ink-faint mb-2">Now</div>
             <p className="text-sm text-ink-soft leading-relaxed">
-              Researching how communities navigate{" "}
-              <em className="font-display">care infrastructures</em> after a diagnosis.
+              Mapping how first-generation immigrants navigate{" "}
+              <em className="font-display">mental health systems</em> — where language, stigma, and bureaucracy collide.
             </p>
           </div>
         </aside>
@@ -133,7 +133,7 @@ export default function Hero() {
         >
           <div className="mb-5 flex items-center gap-3">
             <span className="h-2 w-2 rounded-full bg-ink" />
-            <span className="font-hand text-xl text-ink-soft">a working notebook by Faiza —</span>
+            <span className="font-hand text-xl text-ink-soft">where design meets the people it serves —</span>
           </div>
 
           <h1 className="font-display text-[clamp(3.4rem,7.2vw,7.4rem)] leading-[0.95] tracking-[-0.02em] text-ink">
@@ -149,9 +149,9 @@ export default function Hero() {
           <CircleScribble className="absolute left-[42%] top-[38%] hidden h-28 w-44 text-ink-soft/50 lg:block pointer-events-none" />
 
           <p className="mt-10 max-w-xl text-lg leading-relaxed text-ink-soft">
-            UX Researcher &amp; Service Designer exploring
-            <span className="font-display italic"> people, systems, and care </span>
-            through research-driven design.
+            I listen before I wireframe.
+            <span className="font-display italic"> I map systems before I sketch screens. </span>
+            The most important design decisions happen long before anyone opens Figma.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-5">
@@ -159,14 +159,14 @@ export default function Hero() {
               href="#work"
               className="group relative inline-flex items-center gap-3 rounded-full bg-ink px-7 py-3.5 text-[15px] font-medium text-background transition-transform hover:-translate-y-0.5"
             >
-              View Case Studies
+              See My Work
               <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
             </a>
             <a
               href="#about"
               className="group inline-flex items-center gap-2 text-[15px] font-medium text-ink underline-offset-[6px] decoration-ink-faint hover:decoration-ink underline"
             >
-              About Me
+              My Process
             </a>
             <span className="font-hand text-ink-faint text-base ml-2 hidden sm:inline-flex items-center gap-2">
               <ArrowCurve flip className="h-9 w-12 text-ink-faint -rotate-12" />
@@ -175,9 +175,9 @@ export default function Hero() {
           </div>
 
           <div className="mt-16 max-w-md border-t border-rule pt-5">
-            <p className="text-xs uppercase tracking-[0.22em] text-ink-faint mb-2">Field note · 23 Apr</p>
+            <p className="text-xs uppercase tracking-[0.22em] text-ink-faint mb-2">Field note · 14 Feb</p>
             <p className="font-hand-alt text-[15px] text-ink-soft leading-relaxed">
-              "The interface is the smallest part of the experience. The system around it is the design."
+              "Good research doesn't find problems. It finds the invisible logic people use to survive them."
             </p>
           </div>
         </div>
@@ -196,19 +196,19 @@ export default function Hero() {
                 backgroundBlendMode: "multiply",
               }}
             />
-            <p className="mt-2 font-hand text-base text-ink-soft text-center">Karachi clinic — Mar 2025</p>
+            <p className="mt-2 font-hand text-base text-ink-soft text-center">Community clinic — Jan 2026</p>
           </PaperCard>
 
           <StickyNote color="yellow" rotate={5} className="absolute top-[260px] right-[140px] w-[180px]">
             <p className="font-hand-alt text-[13px] text-ink leading-snug">
-              <strong>Insight 07.</strong> Patients trust people, not portals. The UI must defer to the relationship.
+              <strong>Insight 03.</strong> The waiting room is not a gap in the journey — it is the journey. Design it.
             </p>
           </StickyNote>
 
           <PaperCard rotate={2} className="absolute top-[300px] right-0 w-[230px] p-4 bg-paper">
             <div className="text-[10px] uppercase tracking-[0.22em] text-ink-faint mb-2">Affinity cluster</div>
             <div className="space-y-1.5">
-              {(["waiting", "language", "follow-up", "trust", "signage"] as const).map((t, i) => (
+              {(["trust", "waiting", "language", "agency", "shame"] as const).map((t, i) => (
                 <div key={t} className="flex items-center gap-2 text-[13px] text-ink-soft">
                   <span
                     className="inline-block h-2.5 w-2.5 rounded-sm"
@@ -223,7 +223,7 @@ export default function Hero() {
                     }}
                   />
                   <span>{t}</span>
-                  <span className="ml-auto font-hand text-ink-faint">×{[8, 5, 12, 3, 2][i]}</span>
+                  <span className="ml-auto font-hand text-ink-faint">×{[14, 9, 7, 5, 3][i]}</span>
                 </div>
               ))}
             </div>
@@ -231,9 +231,9 @@ export default function Hero() {
 
           <StickyNote color="pink" rotate={-6} className="absolute top-[540px] right-[110px] w-[200px]">
             <p className="font-hand text-[17px] text-ink leading-tight">
-              "I just want someone to explain what's next."
+              "Nobody ever explained what would happen next. I just kept showing up."
             </p>
-            <p className="mt-2 text-[10px] uppercase tracking-[0.18em] text-ink-faint">P-04 · interview</p>
+            <p className="mt-2 text-[10px] uppercase tracking-[0.18em] text-ink-faint">P-11 · home visit</p>
           </StickyNote>
 
           <Connector className="absolute top-[200px] right-[80px] h-40 w-52 text-ink-faint/60 pointer-events-none" />
@@ -251,7 +251,7 @@ export default function Hero() {
         className="absolute bottom-24 left-[12%] w-[170px] hidden lg:block"
       >
         <p className="font-hand-alt text-[12px] text-ink leading-snug">
-          <strong>Method:</strong> shadowing + diary studies + co-design workshops.
+          <strong>Method:</strong> contextual inquiry + participatory mapping + speculative co-design.
         </p>
       </StickyNote>
 
@@ -265,19 +265,19 @@ export default function Hero() {
           }}
         >
           <Tape className="-top-2 left-1/2 -translate-x-1/2 rotate-3" width={50} />
-          <p className="font-hand text-[15px] text-ink-soft">scroll to read the archive ↓</p>
+          <p className="font-hand text-[15px] text-ink-soft">scroll to explore the work ↓</p>
         </div>
       </div>
 
       {/* Footer marginalia */}
       <div className="absolute bottom-5 left-0 right-0 mx-auto flex max-w-[1400px] items-center justify-between px-10 text-[11px] uppercase tracking-[0.22em] text-ink-faint">
         <div className="flex items-center gap-3">
-          <span className="h-px w-10 bg-ink-faint" />chapter one — practice
+          <span className="h-px w-10 bg-ink-faint" />chapter one — field work
         </div>
         <div className="flex items-center gap-6">
           <span>karachi · london</span>
-          <span>est. 2019</span>
-          <span className="font-hand normal-case tracking-normal text-sm">page 01 / 12</span>
+          <span>est. 2021</span>
+          <span className="font-hand normal-case tracking-normal text-sm">page 01 / 08</span>
         </div>
       </div>
     </section>
